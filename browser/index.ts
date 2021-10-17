@@ -1,0 +1,1 @@
+export { PasswordLockedCoin  } from './PasswordLockedCoin';

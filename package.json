@@ -1,6 +1,6 @@
 {
   "name": "@matsutake/wallets",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Chia wallets built using matsutake.io framework",
   "main": "index.js",
   "scripts": {

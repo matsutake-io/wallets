@@ -3,7 +3,7 @@
 Example wallets using the [matsutake.io](https://www.matsutake.io) Chia defi application development framework.
 
 ```TypeScript
-import { PasswordLockedCoin } from '@matsutake/api-client';
+import { PasswordLockedCoin } from '@matsutake/wallets/browser'; // Web browser compatible import
 
 const passwordLockedCoinWallet = new PasswordLockedCoin('foobar');
 

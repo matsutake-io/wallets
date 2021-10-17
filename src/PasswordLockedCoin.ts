@@ -1,4 +1,4 @@
-import { createHash } from 'crypto';
+import * as shajs from 'sha.js';
 import { transaction } from '@matsutake/api-client';
 import { Chialisp } from '@matsutake/chialisp';
 import { address } from '@matsutake/crypto';
@@ -14,7 +14,7 @@ export class PasswordLockedCoin {
             (mod (password new_puzhash amount)
                 (defconstant CREATE_COIN 51)
                 
-                (if (= (sha256 password) (q . 0x${createHash('sha256').update(this.password).digest('hex')}))
+                (if (= (sha256 password) (q . 0x${shajs('sha256').update(this.password).digest('hex')}))
                 (list (list CREATE_COIN new_puzhash amount))
                 (x)
             ))
